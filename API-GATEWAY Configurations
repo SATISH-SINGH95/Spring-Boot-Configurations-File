@@ -1,0 +1,35 @@
+
+server:
+  port: 8084
+
+spring:
+  application:
+    name: APPLICATION NAME
+
+  cloud:
+    gateway:
+      routes:
+        - id: MS-USER-SERVICE
+          uri: lb://MS-USER-SERVICE
+          predicates:
+            - Path=/users/**
+
+        - id: MS-RATING-SERVICE
+          uri: lb://MS-RATING-SERVICE
+          predicates:
+            - Path=/ratings/**
+
+        - id: MS-HOTEL-SERVICE
+          uri: lb://MS-HOTEL-SERVICE
+          predicates:
+            - Path=/hotels/**
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
