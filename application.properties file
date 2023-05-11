@@ -6,7 +6,7 @@ spring.datasource.password=password
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
 spring.jpa.hibernate.ddl-auto=update
-pring.jpa.show-sql: true
+spring.jpa.show-sql: true
 
 
 ==============================ORACLE DATABSE=========================================
