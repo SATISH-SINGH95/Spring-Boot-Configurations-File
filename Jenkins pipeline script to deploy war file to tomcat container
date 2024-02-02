@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        maven 'MAVEN_HOME'
+        maven 'MAVEN_HOME'   // set maven path in global setting in your jenkins and named that as MAVEN_HOME
     }
     stages{
         stage("mvn clean install"){
