@@ -57,3 +57,14 @@ spring.kafka.consumer.auto-offset-reset=earliest
 
 spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
 spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+
+
+ 
+# ===============================
+# DATABASE Registration
+# ===============================
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@corpqavl300:1521:irisqa
+spring.datasource.username=cpadba
+spring.datasource.password=qacp
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.JndiDataSourceAutoConfiguration
