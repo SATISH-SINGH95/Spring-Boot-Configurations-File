@@ -13,6 +13,6 @@ logging.level.org.springframework=DEBUG
 # Kafka
 # ===============================
 spring.cloud.stream.default-binder=kafka
-spring.cloud.stream.kafka.binder.brokers=corpdevvl204:9092
+spring.cloud.stream.kafka.binder.brokers=********
 spring.cloud.stream.bindings.api-activity-out.destination=api-event-log
 spring.cloud.stream.bindings.api-activity-out.content-type=application/json
